@@ -10,7 +10,7 @@ require('colors')
 const Config = require('./config.json')
 const Logger = require('./lib/logger')
 const RabbitMQ = require('./lib/rabbit')
-const chimeradd = require('chimera-rpc').chimerad
+const chimerad = require('chimera-rpc').chimerad
 
 const daemon = new chimerad({
   host: Config.daemon.host,
